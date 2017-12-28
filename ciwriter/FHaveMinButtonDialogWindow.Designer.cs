@@ -1,6 +1,6 @@
 ﻿namespace ciwriter
 {
-   partial class Form1
+   partial class FHaveMinButtonDialogWindow
    {
       /// <summary>
       /// 必需的设计器变量。
@@ -28,12 +28,19 @@
       /// </summary>
       private void InitializeComponent()
       {
-         this.components = new System.ComponentModel.Container();
-         this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         this.Text = "Form1";
+         this.SuspendLayout();
+         // 
+         // FHaveMinButtonDialogWindow
+         // 
+         this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+         this.ClientSize = new System.Drawing.Size(591, 308);
+         this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+         this.MaximizeBox = false;
+         this.Name = "FHaveMinButtonDialogWindow";
+         this.ResumeLayout(false);
+
       }
 
       #endregion
    }
 }
-

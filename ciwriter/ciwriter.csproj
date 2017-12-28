@@ -31,8 +31,24 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Cabinink Common Library">
+      <HintPath>..\..\Cabinink Common Library\Cabinink Common Library\bin\Debug\Cabinink Common Library.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSkin">
+      <HintPath>..\..\ciw\ciw\bin\Debug\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\Cabinink Common Library\Cabinink Common Library\bin\Release\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\..\Cabinink Common Library\Cabinink Common Library\bin\Release\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Cabinink Common Library\Cabinink Common Library\bin\Release\System.ValueTuple.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,14 +60,53 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="FHaveMinButtonDialogWindow.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FHaveMinButtonDialogWindow.Designer.cs">
+      <DependentUpon>FHaveMinButtonDialogWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLogin.Designer.cs">
+      <DependentUpon>FLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMainForm.Designer.cs">
+      <DependentUpon>FMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FNormalWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FNormalWindow.Designer.cs">
+      <DependentUpon>FNormalWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FOnlyCloseButtonDialogWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FOnlyCloseButtonDialogWindow.Designer.cs">
+      <DependentUpon>FOnlyCloseButtonDialogWindow.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FHaveMinButtonDialogWindow.resx">
+      <DependentUpon>FHaveMinButtonDialogWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLogin.resx">
+      <DependentUpon>FLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMainForm.resx">
+      <DependentUpon>FMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FNormalWindow.resx">
+      <DependentUpon>FNormalWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FOnlyCloseButtonDialogWindow.resx">
+      <DependentUpon>FOnlyCloseButtonDialogWindow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -60,6 +115,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -73,6 +129,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Core\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
